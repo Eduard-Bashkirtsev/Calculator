@@ -41,7 +41,7 @@ namespace Project1 {
 		/// <summary>
 		/// Обязательная переменная конструктора.
 		/// </summary>
-		System::ComponentModel::Container ^components;
+		System::ComponentModel::Container^ components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -55,12 +55,14 @@ namespace Project1 {
 			// 
 			// button1
 			// 
+			this->button1->BackColor = System::Drawing::Color::Red;
+			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
 			this->button1->Location = System::Drawing::Point(443, 12);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(27, 24);
 			this->button1->TabIndex = 0;
-			this->button1->Text = L"button1";
-			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Text = L"X";
+			this->button1->UseVisualStyleBackColor = false;
 			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
 			// 
 			// MyForm
@@ -80,6 +82,7 @@ namespace Project1 {
 		}
 #pragma endregion
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->Close();
 	}
 	};
 }
