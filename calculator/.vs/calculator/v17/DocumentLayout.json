@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\\u042D\u0434\u0443\u0430\u0440\u0434\\Source\\Repos\\Eduard-Bashkirtsev\\Calculator\\calculator\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{88ECE35C-BFD8-4BC1-83E6-1F0C4659F432}|Project1\\Project1.vcxproj|C:\\Users\\\u042D\u0434\u0443\u0430\u0440\u0434\\Source\\Repos\\Eduard-Bashkirtsev\\Calculator\\calculator\\Project1\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
-      "RelativeMoniker": "D:0:0:{88ECE35C-BFD8-4BC1-83E6-1F0C4659F432}|Project1\\Project1.vcxproj|solutionrelative:Project1\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{88ECE35C-BFD8-4BC1-83E6-1F0C4659F432}|Project1\\Project1.vcxproj|C:\\Users\\\u042D\u0434\u0443\u0430\u0440\u0434\\Source\\Repos\\Eduard-Bashkirtsev\\Calculator\\calculator\\Project1\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{88ECE35C-BFD8-4BC1-83E6-1F0C4659F432}|Project1\\Project1.vcxproj|solutionrelative:Project1\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88ECE35C-BFD8-4BC1-83E6-1F0C4659F432}|Project1\\Project1.vcxproj|C:\\Users\\\u042D\u0434\u0443\u0430\u0440\u0434\\Source\\Repos\\Eduard-Bashkirtsev\\Calculator\\calculator\\Project1\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
+      "RelativeMoniker": "D:0:0:{88ECE35C-BFD8-4BC1-83E6-1F0C4659F432}|Project1\\Project1.vcxproj|solutionrelative:Project1\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,25 +50,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MyForm.h",
               "DocumentMoniker": "C:\\Users\\\u042D\u0434\u0443\u0430\u0440\u0434\\Source\\Repos\\Eduard-Bashkirtsev\\Calculator\\calculator\\Project1\\MyForm.h",
               "RelativeDocumentMoniker": "Project1\\MyForm.h",
-              "ToolTip": "C:\\Users\\\u042D\u0434\u0443\u0430\u0440\u0434\\Source\\Repos\\Eduard-Bashkirtsev\\Calculator\\calculator\\Project1\\MyForm.h",
-              "RelativeToolTip": "Project1\\MyForm.h",
-              "ViewState": "AgIAADAAAAAAAAAAAAAwwFgAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\\u042D\u0434\u0443\u0430\u0440\u0434\\Source\\Repos\\Eduard-Bashkirtsev\\Calculator\\calculator\\Project1\\MyForm.h*",
+              "RelativeToolTip": "Project1\\MyForm.h*",
+              "ViewState": "AgIAAAwCAAAAAAAAAAAAACYCAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-20T12:36:54.157Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MyForm.h [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\\u042D\u0434\u0443\u0430\u0440\u0434\\Source\\Repos\\Eduard-Bashkirtsev\\Calculator\\calculator\\Project1\\MyForm.h",
               "RelativeDocumentMoniker": "Project1\\MyForm.h",
-              "ToolTip": "C:\\Users\\\u042D\u0434\u0443\u0430\u0440\u0434\\Source\\Repos\\Eduard-Bashkirtsev\\Calculator\\calculator\\Project1\\MyForm.h [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "Project1\\MyForm.h [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "ToolTip": "C:\\Users\\\u042D\u0434\u0443\u0430\u0440\u0434\\Source\\Repos\\Eduard-Bashkirtsev\\Calculator\\calculator\\Project1\\MyForm.h [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]*",
+              "RelativeToolTip": "Project1\\MyForm.h [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-20T12:36:31.235Z",
               "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
