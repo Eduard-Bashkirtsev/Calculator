@@ -72,6 +72,7 @@ namespace Project1 {
 	private: System::Windows::Forms::Button^ btn_minus;
 	private: System::Windows::Forms::Button^ btn_x;
 	private: System::Windows::Forms::Button^ btn_minpl;
+	private: System::Windows::Forms::Button^ pow_btn;
 
 
 
@@ -95,6 +96,7 @@ namespace Project1 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm::typeid));
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->nub_btn_1 = (gcnew System::Windows::Forms::Button());
 			this->nub_btn_2 = (gcnew System::Windows::Forms::Button());
@@ -117,6 +119,7 @@ namespace Project1 {
 			this->btn_minus = (gcnew System::Windows::Forms::Button());
 			this->btn_x = (gcnew System::Windows::Forms::Button());
 			this->btn_minpl = (gcnew System::Windows::Forms::Button());
+			this->pow_btn = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// button1
@@ -258,6 +261,7 @@ namespace Project1 {
 			this->btn_fact->TabIndex = 12;
 			this->btn_fact->Text = L"!";
 			this->btn_fact->UseVisualStyleBackColor = false;
+			this->btn_fact->Click += gcnew System::EventHandler(this, &MyForm::btn_fact_Click);
 			// 
 			// nub_btn_9
 			// 
@@ -434,12 +438,24 @@ namespace Project1 {
 			this->btn_minpl->UseVisualStyleBackColor = false;
 			this->btn_minpl->Click += gcnew System::EventHandler(this, &MyForm::btn_minpl_Click);
 			// 
+			// pow_btn
+			// 
+			this->pow_btn->BackColor = System::Drawing::SystemColors::ButtonHighlight;
+			this->pow_btn->Location = System::Drawing::Point(14, 530);
+			this->pow_btn->Name = L"pow_btn";
+			this->pow_btn->Size = System::Drawing::Size(196, 27);
+			this->pow_btn->TabIndex = 23;
+			this->pow_btn->Text = L"СТЕПЕНЬ";
+			this->pow_btn->UseVisualStyleBackColor = false;
+			this->pow_btn->Click += gcnew System::EventHandler(this, &MyForm::pow_btn_Click);
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::ActiveBorder;
-			this->ClientSize = System::Drawing::Size(464, 542);
+			this->ClientSize = System::Drawing::Size(464, 569);
+			this->Controls->Add(this->pow_btn);
 			this->Controls->Add(this->btn_minpl);
 			this->Controls->Add(this->btn_x);
 			this->Controls->Add(this->btn_minus);
@@ -464,12 +480,24 @@ namespace Project1 {
 			this->Controls->Add(this->button1);
 			this->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"MyForm";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Калькулятор";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->ResumeLayout(false);
 
+		}
+		unsigned long long factorial(int n) {
+			if (n == 0 || n == 1) {
+				return 1; // Факториал 0 и 1 равен 1
+			}
+
+			unsigned long long result = 1;
+			for (int i = 2; i <= n; ++i) {
+				result *= i; // Умножаем результат на текущее число
+			}
+			return result;
 		}
 private: float first_num;
 private: char user_action = ' ';
@@ -495,9 +523,13 @@ private: System::Void math_action(char action) {
 	this->user_action = action;
 	this-> label_out-> Text = "0";
 }
+private: System::Void pow_btn_Click(System::Object^ sender, System::EventArgs^ e) {
+	math_action('^');
+}
 private: System::Void btn_plus_Click(System::Object^ sender, System::EventArgs^ e) {
 	math_action('+');
 }
+
 private: System::Void btn_minus_Click(System::Object^ sender, System::EventArgs^ e) {
 	math_action('-');
 }
@@ -512,6 +544,10 @@ private: System::Void btn_del_Click(System::Object^ sender, System::EventArgs^ e
 			return;
 		float second = System::Convert::ToDouble(this->label_out->Text);
 		switch (this->user_action) {
+		case '^': {
+			res = pow(first_num, second);
+			break;
+		}
 		case '+': res = this->first_num + second; break;
 		case '-': res = this->first_num - second; break;
 		case'*': res = this->first_num * second; break;
@@ -548,6 +584,11 @@ private: System::Void dot_btn_Click(System::Object^ sender, System::EventArgs^ e
 private: System::Void btn_sqrt_Click(System::Object^ sender, System::EventArgs^ e) {
 	first_num = System::Convert::ToDouble(this->label_out->Text);
 	res = sqrt(first_num);
+	this->label_out->Text = System::Convert::ToString(res);
+}
+private: System::Void btn_fact_Click(System::Object^ sender, System::EventArgs^ e) {
+	first_num = System::Convert::ToDouble(this->label_out->Text);
+	res = factorial(first_num);
 	this->label_out->Text = System::Convert::ToString(res);
 }
 };
