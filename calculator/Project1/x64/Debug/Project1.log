@@ -1,29 +1,35 @@
 ﻿  MyForm.cpp
-C:\Users\Эдуард\Source\Repos\Eduard-Bashkirtsev\Calculator\calculator\Project1\MyForm.h(522,45): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Эдуард\Source\Repos\Eduard-Bashkirtsev\Calculator\calculator\Project1\MyForm.h(536,45): warning C4244: =: преобразование "double" в "float", возможна потеря данных
   (компиляция исходного файла "MyForm.cpp")
   
-C:\Users\Эдуард\Source\Repos\Eduard-Bashkirtsev\Calculator\calculator\Project1\MyForm.h(545,16): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\Эдуард\Source\Repos\Eduard-Bashkirtsev\Calculator\calculator\Project1\MyForm.h(559,16): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
   (компиляция исходного файла "MyForm.cpp")
   
-C:\Users\Эдуард\Source\Repos\Eduard-Bashkirtsev\Calculator\calculator\Project1\MyForm.h(548,13): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Эдуард\Source\Repos\Eduard-Bashkirtsev\Calculator\calculator\Project1\MyForm.h(562,13): warning C4244: =: преобразование "double" в "float", возможна потеря данных
   (компиляция исходного файла "MyForm.cpp")
   
-C:\Users\Эдуард\Source\Repos\Eduard-Bashkirtsev\Calculator\calculator\Project1\MyForm.h(574,12): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\Эдуард\Source\Repos\Eduard-Bashkirtsev\Calculator\calculator\Project1\MyForm.h(588,12): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
   (компиляция исходного файла "MyForm.cpp")
   
-C:\Users\Эдуард\Source\Repos\Eduard-Bashkirtsev\Calculator\calculator\Project1\MyForm.h(585,39): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Эдуард\Source\Repos\Eduard-Bashkirtsev\Calculator\calculator\Project1\MyForm.h(599,39): warning C4244: =: преобразование "double" в "float", возможна потеря данных
   (компиляция исходного файла "MyForm.cpp")
   
-C:\Users\Эдуард\Source\Repos\Eduard-Bashkirtsev\Calculator\calculator\Project1\MyForm.h(586,12): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Эдуард\Source\Repos\Eduard-Bashkirtsev\Calculator\calculator\Project1\MyForm.h(600,12): warning C4244: =: преобразование "double" в "float", возможна потеря данных
   (компиляция исходного файла "MyForm.cpp")
   
-C:\Users\Эдуард\Source\Repos\Eduard-Bashkirtsev\Calculator\calculator\Project1\MyForm.h(590,39): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Эдуард\Source\Repos\Eduard-Bashkirtsev\Calculator\calculator\Project1\MyForm.h(604,39): warning C4244: =: преобразование "double" в "float", возможна потеря данных
   (компиляция исходного файла "MyForm.cpp")
   
-C:\Users\Эдуард\Source\Repos\Eduard-Bashkirtsev\Calculator\calculator\Project1\MyForm.h(591,18): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Эдуард\Source\Repos\Eduard-Bashkirtsev\Calculator\calculator\Project1\MyForm.h(605,18): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
   (компиляция исходного файла "MyForm.cpp")
   
-C:\Users\Эдуард\Source\Repos\Eduard-Bashkirtsev\Calculator\calculator\Project1\MyForm.h(591,17): warning C4244: =: преобразование "unsigned __int64" в "float", возможна потеря данных
+C:\Users\Эдуард\Source\Repos\Eduard-Bashkirtsev\Calculator\calculator\Project1\MyForm.h(605,17): warning C4244: =: преобразование "unsigned __int64" в "float", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+C:\Users\Эдуард\Source\Repos\Eduard-Bashkirtsev\Calculator\calculator\Project1\MyForm.h(609,39): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+C:\Users\Эдуард\Source\Repos\Eduard-Bashkirtsev\Calculator\calculator\Project1\MyForm.h(610,11): warning C4244: =: преобразование "double" в "float", возможна потеря данных
   (компиляция исходного файла "MyForm.cpp")
   
   MyForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка

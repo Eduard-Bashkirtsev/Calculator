@@ -73,6 +73,7 @@ namespace Project1 {
 	private: System::Windows::Forms::Button^ btn_x;
 	private: System::Windows::Forms::Button^ btn_minpl;
 	private: System::Windows::Forms::Button^ pow_btn;
+	private: System::Windows::Forms::Button^ ln_btn;
 
 
 
@@ -120,6 +121,7 @@ namespace Project1 {
 			this->btn_x = (gcnew System::Windows::Forms::Button());
 			this->btn_minpl = (gcnew System::Windows::Forms::Button());
 			this->pow_btn = (gcnew System::Windows::Forms::Button());
+			this->ln_btn = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// button1
@@ -449,12 +451,24 @@ namespace Project1 {
 			this->pow_btn->UseVisualStyleBackColor = false;
 			this->pow_btn->Click += gcnew System::EventHandler(this, &MyForm::pow_btn_Click);
 			// 
+			// ln_btn
+			// 
+			this->ln_btn->BackColor = System::Drawing::SystemColors::ButtonHighlight;
+			this->ln_btn->Location = System::Drawing::Point(216, 530);
+			this->ln_btn->Name = L"ln_btn";
+			this->ln_btn->Size = System::Drawing::Size(196, 27);
+			this->ln_btn->TabIndex = 24;
+			this->ln_btn->Text = L"Ln";
+			this->ln_btn->UseVisualStyleBackColor = false;
+			this->ln_btn->Click += gcnew System::EventHandler(this, &MyForm::ln_btn_Click);
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::ActiveBorder;
 			this->ClientSize = System::Drawing::Size(464, 569);
+			this->Controls->Add(this->ln_btn);
 			this->Controls->Add(this->pow_btn);
 			this->Controls->Add(this->btn_minpl);
 			this->Controls->Add(this->btn_x);
@@ -589,6 +603,11 @@ private: System::Void btn_sqrt_Click(System::Object^ sender, System::EventArgs^ 
 private: System::Void btn_fact_Click(System::Object^ sender, System::EventArgs^ e) {
 	first_num = System::Convert::ToDouble(this->label_out->Text);
 	res = factorial(first_num);
+	this->label_out->Text = System::Convert::ToString(res);
+}
+private: System::Void ln_btn_Click(System::Object^ sender, System::EventArgs^ e) {
+	first_num = System::Convert::ToDouble(this->label_out->Text);
+	res = log(first_num);
 	this->label_out->Text = System::Convert::ToString(res);
 }
 };
